@@ -1,7 +1,9 @@
+import { StoryComponent } from '@/components';
+
 export default function Story() {
   return (
     <div>
-      <h1>Story Page</h1>
+      <StoryComponent />
     </div>
   );
 }

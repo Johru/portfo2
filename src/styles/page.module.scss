@@ -1,0 +1,12 @@
+@import 'variables';
+
+.tags i {
+  margin: 0.2em;
+  padding: 0.5em;
+  background: lighten($bg-main, 10%);
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}

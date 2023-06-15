@@ -1,5 +1,4 @@
-$bg-dark: #790931;
-$bg-main: rgb(22, 2, 7);
+@import 'variables';
 
 .sidebar {
   background-color: lighten($bg-dark, 5%);

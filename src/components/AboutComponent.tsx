@@ -1,8 +1,15 @@
-export function About() {
-  return (
-    <div>
-      <h1>About Component</h1>
+import styles from '../styles/page.module.scss';
 
+export function AboutComponent() {
+  return (
+    <div className={styles['tags']}>
+      <h1>About Component</h1>
+      <i>Typescript</i>
+      <i>Angular</i>
+      <i>React</i>
+      <i>NextJS</i>
+      <i>Typescript</i>
+      <i>Typescript</i>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus.
         Integer lacinia. Suspendisse nisl. Nunc auctor. Aenean fermentum risus
