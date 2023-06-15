@@ -1,4 +1,5 @@
 import '../styles/globals.scss';
+import styles from '../styles/layout.module.scss';
 
 import { Sidebar, Navbar } from '../components';
 
@@ -16,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Sidebar />
-        <div>
+        <div className={styles['content-wrapper']}>
           <Navbar />
           <main>{children}</main>
         </div>
