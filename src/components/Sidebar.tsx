@@ -27,12 +27,12 @@ function closeModal (){
 
       <button onClick={openModal}>Download CV</button>
       <dialog ref={dialog}>
-        This is a dialog.
-
-          <a href='/Josef_Hruza_en.pdf' download><button>Download English CV</button></a>
-      <a href='/Josef_Hruza_de.pdf' download><button>Download German CV</button></a>
-      <a href='/Josef_Hruza_cs.pdf' download><button>Download Czech CV</button></a>
-        <button onClick={closeModal}>Close Dialog</button>
+        Select version:
+<br />
+          <a href='/Josef_Hruza_en.pdf' download><button>Download English CV</button></a><br />
+      <a href='/Josef_Hruza_de.pdf' download><button>Download German CV</button></a><br />
+      <a href='/Josef_Hruza_cs.pdf' download><button>Download Czech CV</button></a><br /><br />
+        <button onClick={closeModal}>CLOSE</button>
       </dialog>
     
      

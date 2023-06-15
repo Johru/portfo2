@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+select{
+  background-color: $bg-light ;
+  border-radius: 0.3em;
+  color: inherit;
+  border: none;
+  appearance: none;
+  padding: 0.6em;
+}
+
+option{
+  padding:1em;
+  border-radius: none;
+}
+
+select:hover{
+  background: $bg-light ;
+}
+
 body {
   color: white;
   background: rgb(22, 2, 7);
@@ -26,15 +44,28 @@ a {
 
 button {
   color: inherit;
-  border-radius: 0.3em;
-  border: 1px solid $bg-main;
-  padding: 0.3em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border-radius: 0px;
+  border: 2px solid $bg-dark;
+  padding: 0.5em;
   margin: 0.3em;
-  background-color: $bg-dark;
+  background-color: lighten($bg-dark,12%);
 }
 
 button:hover {
   border: 2px solid $bg-main;
-  background-color: $bg-light;
-  box-shadow: 10px 10px 30px 10px $bg-main;
+  background-color: lighten($bg-dark,17%);
+  box-shadow: 2px 2px 15px 4px $bg-main;
+  cursor: pointer;
+}
+
+dialog{
+  background-color: $bg-main;
+  color:inherit;
+  width: 25vw;
+  height: 40vh;
+}
+dialog::backdrop{
+  background-color: rgb(22, 2, 7, 0.8);
 }
