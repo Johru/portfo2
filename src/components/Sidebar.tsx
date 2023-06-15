@@ -4,8 +4,11 @@ import styles from '../styles/layout.module.scss';
 export const Sidebar = () => {
   return (
     <div className={styles.sidebar}>
-      <a>Sidebar text</a>
-      <p>Contact me Contact me!</p>
+      <h3>Contact me</h3>
+      <p>I am currently open to work, don't hesitate to contact me.</p>
+      <p></p>
+      <p></p>
+      <p>johruza@gmail.com</p>
     </div>
   );
 };
