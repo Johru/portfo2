@@ -1,7 +1,7 @@
 import '../styles/globals.scss';
 import styles from '../styles/layout.module.scss';
 
-import { Sidebar, Navbar } from '../components';
+import { Sidebar, Navbar, Footer } from '../components';
 
 export const metadata = {
   title: 'Josef Hrůza',
@@ -21,6 +21,8 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
         </div>
+
+        <Footer />
       </body>
     </html>
   );

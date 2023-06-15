@@ -3,9 +3,19 @@
 }
 
 body {
-  background-color: yellow;
+  color: white;
+  background: rgb(22, 2, 7);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 2, 7, 1) 70%,
+    rgba(121, 9, 49, 1) 92%,
+    rgba(1, 14, 105, 1) 100%
+  );
+  lay: grid;
+  margin: 0;
 }
 
 main {
-  background-color: burlywood;
+  // background-color: burlywood;
+  padding: 3em;
 }
