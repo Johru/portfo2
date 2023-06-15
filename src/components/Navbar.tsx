@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/layout.module.scss';
 
@@ -5,9 +6,10 @@ export const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles['nav-items']}>
-        <a>Projects</a>
-        <a>My Story</a>
-        <a>About me</a>
+        <Link href="/">Home</Link>
+        <Link href="/projects">Projects</Link>
+        <Link href="/story">My Story</Link>
+        <Link href="/about">About me</Link>
       </div>
       <form action="" className={styles['locale']}>
         <label htmlFor="locale">Language: </label>
