@@ -7,9 +7,12 @@
   color: $ft-accent;
 }
 
+.underline:hover {
+  color: lighten($ft-accent,10%)
+}
+
 .bold{
   font-weight: bold;
-  // font-size: 1.2em;
 }
 
 .locale {margin-right: 20em;}
@@ -35,6 +38,13 @@
  align-items: flex-start;
  background-repeat: no-repeat;
  background-size: contain;
+}
+
+.image-wrapper-page {
+  position: relative;
+  object-fit: contain;
+width: 100%;
+height: 75vh;
 }
 
 .image-dynamic{
@@ -66,6 +76,7 @@
   margin: 2em;
   display: grid;
   grid-template-columns: 200px auto;
+  gap: 0.7em;
 }
 
 .grid > * {

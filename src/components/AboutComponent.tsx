@@ -15,6 +15,9 @@ export function AboutComponent() {
       <i>NodeJS</i>
       <i>Express</i>
       <i>TypeORM</i>
+      <i>mySQL</i>
+      <i>HTML</i>
+      <i>CSS / Sass</i>
       <i>0Auth</i>
       <i>Bcrypt</i>
       <i>JWT</i>

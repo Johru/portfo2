@@ -14,7 +14,6 @@ select{
 }
 
 .content-wrapper {
-  // background-color: green;
   margin-left: $sidebar-width;
 }
 
@@ -24,7 +23,7 @@ option{
 }
 
 select:hover{
-  background: $bg-light ;
+  background: lighten($bg-dark, 25%) ;
 }
 
 body {
@@ -54,7 +53,6 @@ main {
 a {
   color: inherit;
   text-decoration: none;
-
   cursor: pointer;
 }
 

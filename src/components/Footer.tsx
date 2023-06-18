@@ -1,15 +1,14 @@
 import React from 'react';
 import styles from '../styles/layout.module.scss';
+import styles2 from '../styles/page.module.scss';
 
 export const Footer = () => {
   return (
     <div className={styles.footer}>
-      {/* <a
-        href="https://www.flaticon.com/free-icons/squirrel"
-        title="squirrel icons"
-      >
-        Squirrel icons created by IconsNova - Flaticon
-      </a> */}
+      <div className={styles2.grid}>
+        <p>This portfolio website:</p>
+        <a className={styles2.underline} href='https://github.com/Johru/portfo2/tree/master' rel='noopener' target='_blank'>https://github.com/Johru/portfo2/tree/master</a>
+      </div>
     </div>
   );
 };
