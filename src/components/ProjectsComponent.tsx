@@ -1,33 +1,44 @@
+import Link from 'next/link';
+import styles from '../styles/page.module.scss';
+import Image from 'next/image';
+
 export function ProjectsComponent() {
   return (
-    <div>
-      <h1>Projects Component</h1>
+  <div>
+      <h1>Projects</h1>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus.
-        Integer lacinia. Suspendisse nisl. Nunc auctor. Aenean fermentum risus
-        id tortor. Mauris dictum facilisis augue. Nullam sit amet magna in magna
-        gravida vehicula. Maecenas sollicitudin. Proin pede metus, vulputate
-        nec, fermentum fringilla, vehicula vitae, justo. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-        id est laborum. Fusce suscipit libero eget elit. Duis sapien nunc,
-        commodo et, interdum suscipit, sollicitudin et, dolor. Fusce
-        consectetuer risus a nunc. Proin mattis lacinia justo. Mauris elementum
-        mauris vitae tortor.
-      </p>
+    <div className={styles['project-box']}>
+     <> <Link href='/projects/workstation'><h3>Workstation Booking</h3></Link></>
+     <> <Link href='/projects/woodland'><h3>Woodland AI</h3></Link></>
+     <>  <Link href='/projects/heromaze'><h3>Hero Maze</h3></Link></>
 
-      <p>
-        Praesent vitae arcu tempor neque lacinia pretium. Phasellus enim erat,
-        vestibulum vel, aliquam a, posuere eu, velit. Duis pulvinar. Nullam at
-        arcu a est sollicitudin euismod. Etiam commodo dui eget wisi. Vivamus
-        porttitor turpis ac leo. Curabitur vitae diam non enim vestibulum
-        interdum. Aliquam id dolor. Fusce aliquam vestibulum ipsum. Donec vitae
-        arcu. Nam libero tempore, cum soluta nobis est eligendi optio cumque
-        nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-        voluptas assumenda est, omnis dolor repellendus. Aenean fermentum risus
-        id tortor. Proin mattis lacinia justo. Praesent id justo in neque
-        elementum ultrices.
-      </p>
+      <span className={`${styles['tags']} ${styles['mintags']}`}><i>Angular</i><i>NodeJS</i><i>TypeORM</i></span>
+      <span className={`${styles['tags']} ${styles['mintags']}`}><i>React</i><i>NextJS</i></span>
+      <span className={`${styles['tags']} ${styles['mintags']}`}><i>Typescript</i><i>A*</i><i>Bresenham&apos;s algo</i></span>
+
+      <p>A platform for employees to book specific seats in various offices for the upcoming month.</p>
+      <p>Custom web interface for testing bots in the board game Root: A Game of Woodland Might and Right.</p>
+      <p>A maze crawler game featuring a brave hero, loot, monsters and combat. Two algorithms for line of sight and pathfinding make sure monsters can follow the hero if they see.</p>
+
+      <Link href='/projects/workstation'>
+        <div className={styles['image-wrapper']} style={{backgroundImage: `url('/drudgehouse.png')`}}>
+        </div>
+      </Link>
+      <Link href='/projects/woodland'>
+        <div className={styles['image-wrapper']} style={{backgroundImage: `url('/woodland.png')`}}> 
+        </div>
+      </Link>
+      <Link href='/projects/heromaze'> 
+        <div className={styles['image-wrapper']} style={{backgroundImage: `url('/wanderer.png')`}}>
+        </div>
+      </Link>
+     
     </div>
+
+  </div>
+
+
+      
+   
   );
 }

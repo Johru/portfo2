@@ -1,40 +1,36 @@
+import Link from 'next/link';
 import styles from '../styles/page.module.scss';
 
 export function AboutComponent() {
   return (
+    <div>
+      <h1>Josef Hrůza</h1>
+      <h3>Junior Fullstack Developer</h3>
     <div className={styles['tags']}>
-      <h1>About Component</h1>
       <i>Typescript</i>
+      <i>Javascript</i>
       <i>Angular</i>
       <i>React</i>
       <i>NextJS</i>
-      <i>Typescript</i>
-      <i>Typescript</i>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus.
-        Integer lacinia. Suspendisse nisl. Nunc auctor. Aenean fermentum risus
-        id tortor. Mauris dictum facilisis augue. Nullam sit amet magna in magna
-        gravida vehicula. Maecenas sollicitudin. Proin pede metus, vulputate
-        nec, fermentum fringilla, vehicula vitae, justo. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-        id est laborum. Fusce suscipit libero eget elit. Duis sapien nunc,
-        commodo et, interdum suscipit, sollicitudin et, dolor. Fusce
-        consectetuer risus a nunc. Proin mattis lacinia justo. Mauris elementum
-        mauris vitae tortor.
+      <i>NodeJS</i>
+      <i>Express</i>
+      <i>TypeORM</i>
+      <i>0Auth</i>
+      <i>Bcrypt</i>
+      <i>JWT</i>
+      </div>
+      <p className={styles['ft-large']}>
+    Looking for a web developer?
+    Don&apos;t hesitate to <Link href='/contacts' className={styles.underline}>contact</Link> me!
       </p>
 
-      <p>
-        Praesent vitae arcu tempor neque lacinia pretium. Phasellus enim erat,
-        vestibulum vel, aliquam a, posuere eu, velit. Duis pulvinar. Nullam at
-        arcu a est sollicitudin euismod. Etiam commodo dui eget wisi. Vivamus
-        porttitor turpis ac leo. Curabitur vitae diam non enim vestibulum
-        interdum. Aliquam id dolor. Fusce aliquam vestibulum ipsum. Donec vitae
-        arcu. Nam libero tempore, cum soluta nobis est eligendi optio cumque
-        nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-        voluptas assumenda est, omnis dolor repellendus. Aenean fermentum risus
-        id tortor. Proin mattis lacinia justo. Praesent id justo in neque
-        elementum ultrices.
-      </p>
+      <p className={styles['ft-large']}>
+    I am junior fullstack developer based in Prague, Czech Republic, but willing to relocate. You can see some of my projects below, or have a look at my  <Link href='/story' className={styles.underline}>story</Link>
+    &nbsp;to read about what made me change my career and how that informs my mindset.      </p>
+    
+
+    <br/>
+    <br/>
     </div>
   );
 }

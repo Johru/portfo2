@@ -1,12 +1,78 @@
 @import 'variables';
-
-.tags i {
-  margin: 0.2em;
-  padding: 0.5em;
-  background: lighten($bg-main, 10%);
-  font-weight: bold;
+.ft-large{
+  font-size: larger;
 }
-
 .underline {
   text-decoration: underline;
+  color: $ft-accent;
+}
+
+.bold{
+  font-weight: bold;
+  // font-size: 1.2em;
+}
+
+.locale {margin-right: 20em;}
+
+.tags, .mintags{
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-box{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto 1fr;
+  gap: 1em;
+}
+
+.image-wrapper {
+  position: relative;
+ height: 300px;
+ width: 100%;
+ object-fit: contain;
+ display: flex;
+ align-items: flex-start;
+ background-repeat: no-repeat;
+ background-size: contain;
+}
+
+.image-dynamic{
+  object-fit: contain;
+ 
+}
+
+.project-div h3 {
+  justify-self: center;
+  margin: 0 0 0.3em;
+
+}
+
+.tags i {
+  margin: 0.4em;
+  padding:0.4em 0.5em;
+  background: darken($bg-dark, 10%);
+  font-weight: bold;
+ color: $ft-light
+}
+
+.mintags i{
+  margin: 0.1em;
+  padding:0.2em 0.5em;
+  font-weight: normal;
+}
+
+.grid{
+  margin: 2em;
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+
+.grid > * {
+  padding: 0em;
+  margin:0.2em;
+}
+.g500{
+  max-width: 500px;
+  font-size: large;
 }
