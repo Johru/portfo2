@@ -10,7 +10,7 @@ export default function Woodland() {
       <div className={styles.grid}>
 
         <p className={styles.bold}>URL:</p>
-        <a className={styles.underline}>deployedURL.com</a>
+        <a className={styles.underline} href='https://woodland-ai-production.up.railway.app' rel='noopener' target='_blank'>https://woodland-ai-production.up.railway.app</a>
 
         <p className={styles.bold}>Github:</p>
         <a className={styles.underline} href='https://github.com/Johru/Woodland-AI' rel='noopener' target='_blank'>https://github.com/Johru/Woodland-AI</a>

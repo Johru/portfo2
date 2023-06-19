@@ -14,7 +14,7 @@ export default function Workstation() {
        </p>
 
         <p className={styles.bold}>Github:</p>
-        <a className={styles.underline} href='/' rel='noopener' target='_blank'>https://github.com/Johru/??????</a>
+        <a className={styles.underline} href='https://github.com/Johru/Workstation_booking_repost/tree/development' rel='noopener' target='_blank'>https://github.com/Johru/Workstation_booking_repost/tree/development</a>
 
         <p className={styles.bold}>Contribution:</p>
         <p>20% 	&#40; Made by 5 student developers under the supervision of a mentor.	&#41; My contribution was mostly backend, specifically the Reservation, Building, User dashboard and Admin user management endpoints. I setup reusable data validation for the backend. I also helped connect backend and frontend and did some frontend refactoring to adjust how data flowed through the component tree.</p>

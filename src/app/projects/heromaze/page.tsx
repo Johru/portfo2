@@ -10,7 +10,7 @@ export default function HeroMaze() {
       <div className={styles.grid}>
 
         <p className={styles.bold}>URL:</p>
-        <a className={styles.underline}>deployedURL.com</a>
+        <a className={styles.underline}href='http://johru.wz.cz' rel='noopener' target='_blank'>http://johru.wz.cz</a>
 
         <p className={styles.bold}>Github:</p>
         <a className={styles.underline} href='https://github.com/Johru/Hero-Maze' rel='noopener' target='_blank'>https://github.com/Johru/Hero-Maze</a>
