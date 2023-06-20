@@ -1,5 +1,5 @@
 @import 'variables';
-.ft-large{
+.ft-large {
   font-size: larger;
 }
 .underline {
@@ -8,20 +8,23 @@
 }
 
 .underline:hover {
-  color: lighten($ft-accent,10%)
+  color: lighten($ft-accent, 10%);
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
-.locale {margin-right: 20em;}
+.locale {
+  margin-right: 20em;
+}
 
-.tags, .mintags{
+.tags,
+.mintags {
   display: flex;
   flex-wrap: wrap;
 }
-.project-box{
+.project-box {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -31,48 +34,46 @@
 
 .image-wrapper {
   position: relative;
- height: 300px;
- width: 100%;
- object-fit: contain;
- display: flex;
- align-items: flex-start;
- background-repeat: no-repeat;
- background-size: contain;
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  align-items: flex-start;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .image-wrapper-page {
   position: relative;
   object-fit: contain;
-width: 100%;
-height: 75vh;
+  width: 100%;
+  height: 75vh;
 }
 
-.image-dynamic{
+.image-dynamic {
   object-fit: contain;
- 
 }
 
 .project-div h3 {
   justify-self: center;
   margin: 0 0 0.3em;
-
 }
 
 .tags i {
   margin: 0.4em;
-  padding:0.4em 0.5em;
+  padding: 0.4em 0.5em;
   background: darken($bg-dark, 10%);
   font-weight: bold;
- color: $ft-light
+  color: $ft-light;
 }
 
-.mintags i{
+.mintags i {
   margin: 0.1em;
-  padding:0.2em 0.5em;
+  padding: 0.2em 0.5em;
   font-weight: normal;
 }
 
-.grid{
+.grid {
   margin: 2em;
   display: grid;
   grid-template-columns: 200px auto;
@@ -81,9 +82,18 @@ height: 75vh;
 
 .grid > * {
   padding: 0em;
-  margin:0.2em;
+  margin: 0.2em;
 }
-.g500{
+.g500 {
   max-width: 500px;
   font-size: large;
+}
+.g800 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+}
+
+.article {
+  max-width: 800px;
 }
